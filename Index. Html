@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>My Simple Image Gallery</h2>
+
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('tech')">Tech</button>
+</div>
+
+<div class="gallery">
+  <img src="https://picsum.photos/300/200?1" class="nature" onclick="openLightbox(this.src)">
+  <img src="https://picsum.photos/300/200?2" class="tech" onclick="openLightbox(this.src)">
+  <img src="https://picsum.photos/300/200?3" class="nature" onclick="openLightbox(this.src)">
+  <img src="https://picsum.photos/300/200?4" class="tech" onclick="openLightbox(this.src)">
+  <img src="https://picsum.photos/300/200?5" class="nature" onclick="openLightbox(this.src)">
+  <img src="https://picsum.photos/300/200?6" class="tech" onclick="openLightbox(this.src)">
+</div>
+
+<div class="lightbox" id="lightbox">
+  <span onclick="closeLightbox()">X</span>
+  <img id="lightboxImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
